@@ -1,3 +1,37 @@
+# Next.js Todo App
+
+使用 Next.js、Prisma 與 SQLite 實作的本機 Todo App。
+
+## 專案特色
+
+- 使用 Next.js App Router
+- 使用 Prisma 作為 ORM
+- 使用 SQLite 作為本機資料庫
+- 支援新增、完成 / 取消完成、刪除 Todo
+- 顯示待辦統計資訊
+
+## 技術棧
+
+- Next.js
+- TypeScript
+- Prisma
+- SQLite
+- Tailwind CSS
+
+## 如何啟動專案
+
+```bash
+npm install
+npx prisma migrate dev --name init
+npm run dev
+```
+
+## 資料庫檢視
+使用 Prisma Studio 檢視資料內容：
+```bash
+npx prisma studio
+```
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
