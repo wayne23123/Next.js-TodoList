@@ -23,9 +23,7 @@ export async function toggleTodo(formData: FormData) {
   const id = Number(formData.get('id'))
   const completed = formData.get('completed') === 'true'
 
-  if (!id) {
-    return
-  }
+  if (!id) return
 
   await prisma.todo.update({
     where: { id },
@@ -40,9 +38,7 @@ export async function toggleTodo(formData: FormData) {
 export async function deleteTodo(formData: FormData) {
   const id = Number(formData.get('id'))
 
-  if (!id) {
-    return
-  }
+  if (!id) return
 
   await prisma.todo.delete({
     where: { id },
