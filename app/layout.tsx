@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-Hant" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-white text-gray-900 antialiased transition-colors dark:bg-gray-950 dark:text-gray-100`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-white text-gray-900 antialiased transition-colors dark:bg-gray-950 dark:text-gray-100`} cz-shortcut-listen="true">
         <AppThemeProvider>{children}</AppThemeProvider>
       </body>
     </html>
